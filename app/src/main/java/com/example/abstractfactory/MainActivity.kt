@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.textView) as TextView
         val imageView: ImageView = findViewById(R.id.imageView) as ImageView
 
-        val factory: AbstractFactory = getFactory(Role.GUEST)
+        val factory: AbstractFactory = getFactory(Role.ADMIN)
         val title: Title = factory.createTitle()
         val content: Content = factory.createContent()
 
